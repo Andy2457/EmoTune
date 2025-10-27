@@ -59,6 +59,28 @@ First, ensure you have Python and pip installed. Then run:
 
 pip install -r requirements.txt
 
+### Create a virtual environment (recommended)
+
+It's best to use a virtual environment to avoid conflicting packages. On Windows PowerShell:
+
+```powershell
+# create and activate venv (PowerShell)
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+
+# install dependencies
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+If you use Command Prompt (cmd.exe) instead of PowerShell, activate with:
+
+```cmd
+.venv\Scripts\activate.bat
+```
+
+If you use Git Bash or WSL, use the corresponding activation script for your shell.
+
 ---
 
 ## Running the Project
@@ -75,6 +97,20 @@ pip install -r requirements.txt
     ```
 
 3. Open your browser and go to `http://localhost:5000` to use the web interface.
+
+Alternative entry points
+- To run the Eel-based local GUI (capture / update workflows):
+
+```powershell
+# activate venv if not already active
+python capture.py
+```
+
+- To run the display demo (Tkinter preview):
+
+```powershell
+python display.py
+```
 
 ---
 
