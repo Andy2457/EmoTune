@@ -54,10 +54,10 @@ EmoTune captures images/video from your webcam, runs facial detection, and uses 
 
 ### Install Dependencies
 
-pip install flask opencv-python keras numpy
 
+First, ensure you have Python and pip installed. Then run:
 
-(You may also need `tensorflow` depending on your Keras version.)
+pip install -r requirements.txt
 
 ---
 
