@@ -33,19 +33,6 @@ EmoTune captures images/video from your webcam, runs facial detection, and uses 
 
 ## Project Structure
 
-- emotune/
-- ├── static/
-- ├── templates/
-- pycache/
-- ├── README.md
-- ├── Update_Model.py
-- ├── app.py
-- ├── capture.py
-- ├── display.py
-- ├── final_model.h5
-- ├── haarcascade_frontalface_default.xml
-- ├── model.py
-
 
 - `app.py` - Main Flask application
 - `capture.py`, `display.py`, `model.py`, `Update_Model.py` - Supporting scripts for capturing images, displaying results, training/updating the model
